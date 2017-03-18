@@ -1,0 +1,100 @@
+/** IMPORT RESET AND VARIABLES **/
+@import "reset";
+@import "variables";
+@import "responsive";
+
+/** IMPORT COMPONENTS **/
+@import "components/header";
+@import "components/footer";
+@import "components/comment";
+@import "components/post";
+@import "components/form";
+@import "components/button";
+
+/* IMPORT PAGES */
+@import "pages/single";
+
+/** IMPORT FONTS **/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700,700i');
+
+/** MAIN STYLES **/
+html, body {
+  background-color: #fff;
+  color: $dark_color;
+  letter-spacing: 0.5px;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a, a:visited, a:active, a:focus {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  text-align:center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media all and (max-width: $mobile_width) {
+    padding: 0 15px;
+  }
+}
+
+.container.single {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header-fix-bar {
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -1px 3px rgba(0,0,0,.1);
+  z-index: 1000;
+  span, a {
+    padding: 0 10px;
+    color: #343a40;
+  }
+  .disabled {
+    color: #ccc;
+    cursor: inherit;
+  }
+}
+
+.main-content {
+  margin-top: 0px;
+}
+
+.posts{
+  margin: 60px 0;
+}
+
+.loading {
+  text-align: center;
+  .spinner {
+    margin: 0 auto;
+    margin-right: 50px;
+  }
+}
+
+.emoji {
+  font-style: normal;;
+}

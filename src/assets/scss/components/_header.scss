@@ -1,0 +1,57 @@
+.site-header {
+  background: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: #fff;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: flex-start;
+  z-index: 2;
+
+.header-center {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: baseline;
+    height: 27px;
+}
+
+
+
+
+
+.header-right {
+    flex-basis: 50px;
+}
+
+.logo-holder {
+background-image: url('/static/images/afw-logo-black.png');
+background-repeat: no-repeat;
+height: 31px;
+width: 86px;
+background-size: cover;
+margin-left: 20px;
+float: left;
+}
+
+.page-title-top {
+
+    font-size: 16px;
+    margin-left: 15px;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    border-bottom: 1px solid #000;
+    min-width: 70px;
+    min-height: 27px;
+}
+
+.page-title-bottom {
+    border-bottom: 1px solid black;
+}
+
+  }
